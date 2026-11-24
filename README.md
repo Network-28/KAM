@@ -9,7 +9,7 @@ Kometa expects.
 > KAM is an add-on for Kometa, not a replacement. Kometa still applies the artwork to
 > Plex on its normal runs; KAM manages the files in its asset directories.
 
-**Latest release:** [github.com/thedinz/KAM/releases/latest](https://github.com/thedinz/KAM/releases/latest)
+**Latest release:** [github.com/Network-28/KAM/releases/latest](https://github.com/Network-28/KAM/releases/latest)
 
 ---
 
@@ -143,7 +143,7 @@ Create a `docker-compose.yml`:
 ```yaml
 services:
   kam:
-    image: ghcr.io/thedinz/kam:latest
+    image: ghcr.io/network-28/kam:latest
     container_name: kam
     ports:
       - "7171:8000"
@@ -188,7 +188,7 @@ docker run -d \
   -v /path/to/kam/config:/config \
   -v /path/to/kometa/assets:/assets \
   --restart unless-stopped \
-  ghcr.io/thedinz/kam:latest
+  ghcr.io/network-28/kam:latest
 ```
 
 ### Unraid
@@ -378,7 +378,7 @@ docker compose pull
 docker compose up -d
 ```
 
-With `docker run`, pull `ghcr.io/thedinz/kam:latest`, remove the old container, and
+With `docker run`, pull `ghcr.io/network-28/kam:latest`, remove the old container, and
 start it again with the same options. On Unraid, use **Update** on the container.
 
 Your settings and artwork are safe as long as `/config` and `/assets` are mounted from
