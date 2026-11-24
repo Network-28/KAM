@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   kam:
-    image: ghcr.io/thedinz/kam:latest
+    image: ghcr.io/network-28/kam:latest
     container_name: kam
     restart: unless-stopped
     ports:
