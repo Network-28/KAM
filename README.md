@@ -1,5 +1,8 @@
 # KAM — Kometa Asset Manager
 
+> **Moved:** this project now lives at [github.com/Network-28](https://github.com/Network-28) and its image is `ghcr.io/network-28/kam`. The old `ghcr.io/thedinz/kam` image no longer gets updates. If you run it, change your container's image (on Unraid: Edit the container, then Repository) to `ghcr.io/network-28/kam:latest` and apply. Your settings and data stay as they are.
+
+
 KAM is a web app for managing the artwork in your [Kometa](https://kometa.wiki) asset
 folders. It connects to your Plex server, shows every movie, TV show, and collection
 next to the artwork Kometa will use, and lets you upload, import, and clean up that
